@@ -14,7 +14,10 @@ public class Pedido {
     this.productosSolicitados = new ArrayList<>();
     this.cantidadesSolicitadas = new ArrayList<>();  
     }
-    
+    public void agregarProducto(Producto producto, int cantidad){
+    productosSolicitados.add(producto);
+    cantidadesSolicitadas.add(cantidad);
+    }
     public void mostrarPedido(){
         System.out.println("Cliente: " + cliente.getNombre());
         System.out.println("Direccion: " + cliente.getDireccion());
